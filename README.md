@@ -1,36 +1,63 @@
-# fun.pump
+# Token Launchpad DApp
 
-## Technology Stack & Tools
+A decentralized token launchpad inspired by bonding curve models, allowing users to **create and trade tokens instantly** with dynamic pricing.  
 
-- Solidity (Writing Smart Contracts & Tests)
-- Javascript (Next.js & Testing)
-- [Hardhat](https://hardhat.org/) (Development Framework)
-- [Ethers.js](https://docs.ethers.io/v5/) (Blockchain Interaction)
-- [Next.js](https://nextjs.org/) (Frontend Framework)
+## 🚀 Features
+- **Token Creation:** Deploy new ERC‑20 tokens with a single click.
+- **Bonding Curve Pricing:** Token price automatically increases based on demand.
+- **Buy & Sell:** Users can purchase tokens directly with ETH.
+- **Creator Earnings:** Raised ETH can be withdrawn by project creators after sale completion.
+- **Secure & Audited:** Built with Solidity and tested using Hardhat.
 
-## Requirements For Initial Setup
-- Install [NodeJS](https://nodejs.org/en/). We recommend using an LTS (long-term-support) version, and preferably installing NodeJS via [NVM](https://github.com/nvm-sh/nvm#intro).
+## 🛠 Tech Stack
+- **Smart Contracts:** Solidity, OpenZeppelin
+- **Testing & Deployment:** Hardhat, Chai
+- **Frontend:** React.js, Ethers.js
+- **Blockchain:** Ethereum (Sepolia & local Hardhat network)
 
-## Setting Up
-### 1. Clone/Download the Repository
+## 📂 Project Structure
+- `contracts/` — Solidity smart contracts  
+- `scripts/` — Deployment scripts  
+- `test/` — Hardhat test cases  
+- `frontend/` — React frontend  
 
-### 2. Install Dependencies:
-`$ npm install`
+## ⚙️ Setup Instructions
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/tehami326/token-launchpad-dapp.git
+   cd token-launchpad-dapp
 
-### 3. Run tests
-`$ npx hardhat test`
+Install dependencies:
+npm install
 
-### 4. Start Hardhat node
-`$ npx hardhat node`
+Compile contracts:
+npx hardhat compile
 
-### 5. Run deployment script
-In a separate terminal execute:
 
-`$ npx hardhat ignition deploy ignition/modules/Factory.js --network localhost`
+Run tests:
+npx hardhat test
 
-If you have previously deployed you may want to append `--reset` at the end:
 
-`$ npx hardhat ignition deploy ignition/modules/Factory.js --network localhost --reset`
+Start the frontend:
+cd frontend
+npm start
 
-### 6. Start frontend
-`$ npm run dev`
+Deploy to a network:
+npx hardhat run scripts/deploy.js --network sepolia
+
+🧪 Testing
+Includes unit & integration tests using Hardhat + Chai.
+
+📬 Contact
+Created by Muhammad Tehami
+Feel free to connect for collaborations or discussions!
+
+### **Next Steps**
+1. Create the file in your project root:  
+   `README.md`
+2. Paste the above content.
+3. Commit & push:  
+   ```bash
+   git add README.md
+   git commit -m "Added README"
+   git push
