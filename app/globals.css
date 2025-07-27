@@ -232,20 +232,24 @@ main .listings h1 {
 
 /* TRADE TOKENS */
 .trade {
-  width: 100vw;
-  height: 100vh;
-  background-color: rgba(0, 0, 0, 0.9);
-
+  width: 90vw;
+  max-width: 500px;
+  max-height: 90vh;
+  background-color: rgba(0, 0, 0, 0.95);
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-
   display: flex;
-  align-items: center;
   flex-direction: column;
-  padding-top: 3em;
+  align-items: center;
+  padding: 2em;
+  overflow-y: auto;
+  /* Add this */
+  border-radius: 10px;
+  /* Optional for better look */
 }
+
 
 .trade p {
   font-family: "Arial";
